@@ -1,0 +1,60 @@
+.navbar_main {
+  background-color: rgb(0, 73, 133);
+}
+.made {
+  color: rgb(0, 204, 255);
+}
+.nav_div {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.brand_icon {
+  color: rgb(0, 204, 255);
+}
+.bootstrap {
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid rgb(238, 238, 238);
+  float: left;
+  width: 80%;
+  border-right: none; /* Prevent double borders */
+
+  background: rgb(2, 86, 112);
+}
+.router_outlet{
+  margin: top 200px;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: rgb(2, 86, 112);
+  color: white;
+  font-size: 17px;
+  border: 1px solid rgb(238, 238, 238);
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: rgb(2, 86, 112);
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
