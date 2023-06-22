@@ -9,6 +9,9 @@
   justify-content: center;
   margin: auto;
 }
+option{
+  background-color:rgb(0, 73, 133);
+}
 
 .brand_icon {
   color: rgb(0, 204, 255);
@@ -20,27 +23,27 @@
   box-sizing: border-box;
 }
 
-/* Style the search field */
 form.example input[type="text"] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid rgb(238, 238, 238);
   float: left;
   width: 80%;
-  border-right: none; /* Prevent double borders */
+  border-right: none; 
 
-  background: rgb(2, 86, 112);
+  background: rgb(0, 73, 133);
 }
+
+
 .router_outlet{
   margin: top 200px;
 }
 
-/* Style the submit button */
 form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: rgb(2, 86, 112);
+  background: rgb(0, 73, 133);
   color: white;
   font-size: 17px;
   border: 1px solid rgb(238, 238, 238);
@@ -48,9 +51,6 @@ form.example button {
   cursor: pointer;
 }
 
-form.example button:hover {
-  background: rgb(2, 86, 112);
-}
 
 /* Clear floats */
 form.example::after {

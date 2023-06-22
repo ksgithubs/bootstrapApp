@@ -1,0 +1,22 @@
+.memberform{
+    width:300px
+}
+.card{
+    width:400px
+}
+.box,.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button{
+    margin: auto;
+  }
+  .title {
+    padding-bottom: 35px;
+    border-bottom: 4px solid rgb(0, 162, 255);  
+  }
+  input
+  {
+    border-radius: none;
+  }

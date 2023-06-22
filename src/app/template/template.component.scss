@@ -1,4 +1,22 @@
-p
-{
-    margin-top:100px
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h1,h3{
+    color:rgb(0, 73, 133);
+  }
+  img{
+    width: 500px;
+  }
+  
+.title {
+  padding-bottom: 35px;
+  border-bottom: 4px solid rgb(0, 162, 255);  
+}
+.zoom:hover {
+  transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom {
+  transition: transform .7s; /* Animation */
 }
