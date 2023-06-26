@@ -3,7 +3,7 @@
 <div class="container box">
   <h1>Mem<span class="title">bers L</span>ogin  </h1>
 </div>
-<br /><br />
+<br /><br /> 
 <br />
 <div class="container box">
   <div class="card">
@@ -11,7 +11,7 @@
     <form
       #login="ngForm"
       (ngSubmit)="onSubmit(login.value)"
-      class="form-inline memberform"
+      class="memberform"
     >
       <br />
       <div>
@@ -35,15 +35,17 @@
           name="password"
           ngModel
         />
+        <p *ngIf = "submitStatus" class="invalidCredentials"><span class="invalidCredentialsStar">*</span>  Invalid credentials</p>
+
       </div>
+      
+      <br>
       <br />
 
-      <span>
-        <button type="submit" class="btn submitButton btn-primary mb-2">
+        <button type="submit" class="btn submitButton btn-primary ">
           Submit
         </button>
         <br />
-      </span>
       <br />
     </form>
   </div>

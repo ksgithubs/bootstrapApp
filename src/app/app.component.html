@@ -1,6 +1,5 @@
 <div class="m-4">
   <nav class="navbar fixed-top navbar_main navbar-expand-md navbar-dark">
-    <div class="container-fluid">
       <div>
         <h4>
           <svg
@@ -24,8 +23,10 @@
         </h4>
       </div>
 
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav nav_div collapse navbar-collapse">
+      <div   class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto nav_div ">
+          
+        
           <a
             routerLink="home"
             routerLinkActive="active"
@@ -84,7 +85,7 @@
             </svg></span
             >
           </a>
-        </div>
+        </ul>
 
         <div class="navbar-nav ms-auto">
           <form class="example">
@@ -94,16 +95,13 @@
         </div>
       </div>
       <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
+      class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
   </nav>
 </div>
 <div class="container container_router_outlet">
   <router-outlet></router-outlet>
 </div>
+

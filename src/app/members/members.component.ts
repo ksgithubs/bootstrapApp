@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class MembersComponent implements OnInit {
 
+  submitStatus =false;
 
   constructor(private router: Router) { }
 
@@ -21,6 +22,11 @@ export class MembersComponent implements OnInit {
      console.log("submitted")
     this.router.navigateByUrl('/template');
    }
+   
+   else{
+    this.submitStatus=true;
+
+  }
 
   }
 
