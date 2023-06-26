@@ -8,6 +8,8 @@ import { TemplateComponent } from './template/template.component';
 import { LicenseComponent } from './license/license.component';
 import { ContactComponent } from './contact/contact.component';
 import { MembersComponent } from './members/members.component';
+import { LayoutComponent } from './layout/layout.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { MembersComponent } from './members/members.component';
     TemplateComponent,
     LicenseComponent,
     ContactComponent,
-    MembersComponent
+    MembersComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

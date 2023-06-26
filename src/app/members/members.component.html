@@ -1,41 +1,50 @@
 <br /><br />
+<br /><br /><br />
 <div class="container box">
-  <h1 > <span class="title">Members </span>  </h1>
+  <h1>Mem<span class="title">bers L</span>ogin  </h1>
 </div>
 <br /><br />
-<br>
+<br />
 <div class="container box">
   <div class="card">
     <br />
-    <form class="form-inline memberform">
-      <label  >Your Email</label>
-      <input
-      type="text"
-      class="form-control mb-2 mr-sm-2"
-      id="inlineFormInputName2"
-      placeholder="Jane Doe"
-      />
-      
-      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label
-        ><br />
-        <label  >Your Password</label>
-        <div class="input-group mb-2 mr-sm-2">
-            <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
-            </div>
+    <form
+      #login="ngForm"
+      (ngSubmit)="onSubmit(login.value)"
+      class="form-inline memberform"
+    >
+      <br />
+      <div>
+        <label class="hello">Your Email</label>
+
         <input
           type="text"
-          class="form-control"
-          id="inlineFormInputGroupUsername2"
-          placeholder="Username"
+          placeholder="Enter your Email"
+          name="email"
+          ngModel
+        />
+      </div>
+
+      <br />
+      <div>
+        <label class="hello">Your Password</label>
+
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          name="password"
+          ngModel
         />
       </div>
       <br />
-     
-      <br />
+
       <span>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        <button type="submit" class="btn submitButton btn-primary mb-2">
+          Submit
+        </button>
+        <br />
       </span>
+      <br />
     </form>
   </div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+ 
 @Component({
   selector: 'app-members',
   templateUrl: './members.component.html',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembersComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(login: any){
+
+   
+   if(login.email == 'kavi' && login.password =='kavi' ){
+     console.log("submitted")
+    this.router.navigateByUrl('/template');
+   }
+
   }
 
 }
